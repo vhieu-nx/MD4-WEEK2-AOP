@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Delete customer</title>
+</head>
+<body>
+<h1>View customer</h1>
+<p>
+    <a href="/customers">Customer list</a>
+</p>
+<table>
+    <tr>
+        <td>First name:</td>
+        <td th:text="${customer.name}"></td>
+    </tr>
+    <tr>
+        <td>Last name:</td>
+        <td th:text="${customer.email}"></td>
+    </tr>
+    <tr>
+        <td>Last name:</td>
+        <td th:text="${customer.address}"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
